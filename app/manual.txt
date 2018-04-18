@@ -1,0 +1,13 @@
+1. mysql>create database med_tour;
+	create user 'med_tour'@'localhost' IDENTIFIED BY 'med_tour';
+	GRANT ALL ON med_tour.* TO 'med_tour'@'localhost';
+	
+	
+2. .env -> podesiti kredencijale i bazu
+3. sa githuba pokupiti sve
+
+composer require doctrine/dbal
+
+4. php artisan migrate
+5. php artisan db:seed --class=StatesTableSeeder
+5. php artisan db:seed --class=CitiesTableSeeder
